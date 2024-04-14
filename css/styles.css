@@ -56,10 +56,13 @@ nav a:hover {
     padding: 1rem;
 }
 
-.php_preview h2, h3, h4 {
+.php_preview h2,
+.php_preview h3,
+.php_preview h4 {
     padding: 0.5rem;
     text-align: center;
 }
+
 
 .php_preview h2 {
     background-color: var(--newRe);
@@ -111,6 +114,23 @@ blockquote cite {
     text-align: right;
 }
 
+.tour_section h2 {
+    display: grid;
+    justify-content: left;
+    background-color: var(--navBg);
+    color: var(--gold);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.event {
+    display: grid;
+    justify-content: left;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 0.1rem solid var(--gold);
+}
 
 
 @media only screen and (max-width: 600px) {
