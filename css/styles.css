@@ -5,6 +5,7 @@
     padding: 0;
 }
 
+/* header  */
 header {
   padding: 50px;
   text-align: center;
@@ -29,7 +30,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: var(--textColorWhite);
     font-size: 20px;
     margin: 0px 10px;
     transition: color 0.3s ease, font-size 0.3s ease;
@@ -47,6 +48,45 @@ ul li:not(:last-child) {
 nav a:hover {
     color: var(--gold);
     font-size: 22px;
+}
+
+.php_preview {
+    background: var(--gold);
+    color: var(--textColor);
+    padding: 1rem;
+}
+
+.php_preview h2, h3, h4 {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.php_preview h2 {
+    background-color: var(--newRe);
+    color: var(--textColorWhite);
+    border-radius: 10px;
+    padding: 0.7rem;
+    margin: 0.5rem 4rem;
+}
+
+.php_preview h3 {
+    font-size: 2rem;
+    margin-bottom: -0.5rem;
+}
+
+.php_preview img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.mainText p {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 }
 
 
