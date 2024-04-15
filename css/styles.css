@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--bodycolor);
+}
+
 /* header  */
 
 header {
@@ -166,6 +170,8 @@ blockquote cite {
 
 /* end of tour_section */
 
+/* books_section */
+
 .books_section_header {
     display: grid;
     justify-content: left;
@@ -211,6 +217,116 @@ blockquote cite {
     margin-bottom: 1.5rem;
 }
 
+/* end of books_section */
+
+/* contact_section */
+
+.contact_section_header {
+    display: grid;
+    justify-content: left;
+    background-color: var(--navBg);
+    color: var(--gold);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contact_phofil {
+    display: grid;
+    text-align: left;
+    margin: 1rem;
+    border-bottom: 0.1rem solid var(--gold);
+}
+
+.contact_phofil img {
+    display: grid;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact_phofil h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact_phofil h3,
+.contact_phofil h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.contact_phofil p { 
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    display: grid;
+    border: 0.1rem solid var(--textColorBlack);
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+input, textarea {
+    margin-bottom: 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.btn_submit {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    justify-self: left;
+}
+
+/* end of contact_section */
+
+footer {
+    background: var(--navBg);
+    color: var(--textColorWhite);
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.social-icons img {
+    border-radius: 2rem;
+}
+
+.credits {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.credits a {
+    color: var(--textColorWhite);
+    text-decoration: none;
+}
+
+.credits span {
+    color: var(--gold);
+}
 
 
 
