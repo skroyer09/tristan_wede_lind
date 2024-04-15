@@ -123,7 +123,7 @@ blockquote cite {
 
 /* tour_section */
 
-.tour_section h2 {
+.tour_section_header h2 {
     display: grid;
     justify-content: left;
     background-color: var(--navBg);
@@ -131,6 +131,14 @@ blockquote cite {
     padding: 1rem;
     text-align: center;
     margin: 1rem 0;
+}
+
+.tour_section_header img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .tour_section h3 {
@@ -149,26 +157,74 @@ blockquote cite {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.tour_section img {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    padding: 0.5rem;
-    border-radius: 10px;
-}
-
 .event {
     display: grid;
     justify-content: left;
-    padding: 1rem;
     margin: 1rem;
     border-bottom: 0.1rem solid var(--gold);
 }
+
+/* end of tour_section */
+
+.books_section {
+    display: grid;
+    justify-content: center;
+    margin: 1rem;
+    border-bottom: 0.1rem solid var(--gold);
+}
+
+.book {
+    display: grid;
+    text-align: left;
+    border-bottom: 0.1rem solid var(--gold);
+}
+
+.book img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0.5rem;
+}
+
+.book h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.book h4 {
+    font-size: 1rem;
+}
+
+.book p {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
 
 
 @media only screen and (max-width: 600px) {
     img[src="/img/lind.png"] {
         display: none;
     }
+
+    .closing_menu {
+            display: none; /* Hide the closing menu by default on mobile */
+    }
+
+    #toggleClosingMenu {
+        display: block; 
+        width: 100%; 
+        background-color: transparent;
+        border: none;
+        padding: 1rem; 
+        margin-bottom: -2rem;
+        font-size: 2rem; 
+        text-align: right; 
+        cursor: pointer; 
+        font-family: 'Courier New', Courier, monospace;
+     }
 }
+
 
