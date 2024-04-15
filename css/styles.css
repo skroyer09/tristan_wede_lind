@@ -6,6 +6,7 @@
 }
 
 /* header  */
+
 header {
   padding: 50px;
   text-align: center;
@@ -49,6 +50,10 @@ nav a:hover {
     color: var(--gold);
     font-size: 22px;
 }
+
+/* end of header */
+
+/* content_section */
 
 .php_preview {
     background: var(--gold);
@@ -114,6 +119,10 @@ blockquote cite {
     text-align: right;
 }
 
+/* end of content_section */
+
+/* tour_section */
+
 .tour_section h2 {
     display: grid;
     justify-content: left;
@@ -122,6 +131,30 @@ blockquote cite {
     padding: 1rem;
     text-align: center;
     margin: 1rem 0;
+}
+
+.tour_section h3 {
+    color: var(--onTourH3);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.tour_section h4 {
+    color: var(--onTourH4);
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.tour_section p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tour_section img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .event {
