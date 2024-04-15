@@ -166,6 +166,16 @@ blockquote cite {
 
 /* end of tour_section */
 
+.books_section_header {
+    display: grid;
+    justify-content: left;
+    background-color: var(--navBg);
+    color: var(--gold);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
 .books_section {
     display: grid;
     justify-content: center;
@@ -204,6 +214,8 @@ blockquote cite {
 
 
 
+
+
 @media only screen and (max-width: 600px) {
     img[src="/img/lind.png"] {
         display: none;
@@ -225,6 +237,21 @@ blockquote cite {
         cursor: pointer; 
         font-family: 'Courier New', Courier, monospace;
      }
+
+     #booksClosingMenu {
+        display: block; 
+        width: 100%; 
+        background-color: transparent;
+        border: none;
+        padding: 1rem; 
+        margin-top: -1rem;
+        margin-bottom: -2rem;
+        font-size: 2rem; 
+        text-align: right; 
+        cursor: pointer; 
+        font-family: 'Courier New', Courier, monospace;
+     }
+
 }
 
 
