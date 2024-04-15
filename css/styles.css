@@ -472,5 +472,67 @@ footer {
         transition: color 0.3s ease, font-size 0.3s ease;
         
     }
+
+    .php_preview h2 {
+        background-color: var(--newRe);
+        color: var(--textColorWhite);
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin: 0.1rem 15rem;
+        margin-bottom: 2rem;
+    }
+    /* why wont this work?! */
+    .php_preview img {
+        display: flex;
+        justify-content: left;
+        width: 20%;
+        background: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+    
+
+        /* .books_section */
+        .books_section {
+        display: grid;
+        justify-content: center;
+        margin: 1rem;
+        border-bottom: 0.1rem solid var(--gold);
+    }
+
+    /* .book */
+        .book {
+        display: flex; 
+        flex-direction: row-reverse; 
+        align-items: center; 
+        text-align: left; 
+        border-bottom: 0.1rem solid var(--gold);
+    }
+
+    /* .book img */
+        .book img {
+        width: 60%;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    /* .book h3 */
+        .book h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    /* .book h4 */
+        .book h4 {
+        font-size: 1rem;
+    }
+
+    /* .book p */
+        .book p {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+
 }
 
