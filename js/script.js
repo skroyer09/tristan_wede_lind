@@ -1,52 +1,27 @@
 
-// for closing event content and opening it again
-document.getElementById("toggleClosingMenu").addEventListener("pointerdown", function(event) {
-        var closingMenu = document.querySelector(".tour_section");
-        if (closingMenu.style.display === "none" || closingMenu.style.display === "") {
-            closingMenu.style.display = "block";
-        } else {
-            closingMenu.style.display = "none";
-        }
-        event.target.setPointerCapture(event.pointerId);
-    });
-
-// change the smybol when clicked
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggleClosingMenu');
-    const spanElement = toggleButton.querySelector('span');
+    const booksToggleButton = document.getElementById('booksClosingMenu');
 
-    toggleButton.addEventListener('click', function() {
-        if (spanElement.textContent === 'hide') {
-            spanElement.textContent = 'show'; // Change to "⇊" when clicked
-        } else {
-            spanElement.textContent = 'hide'; // Change back to "⇈" when clicked again
-        }
+    // Toggle event for both tour_section and books_section
+    toggleButton.addEventListener('click', function(event) {
+        const closingMenu = document.querySelector(".tour_section");
+        toggleSectionVisibility(closingMenu, toggleButton);
     });
-});
 
-// for closing books content and opening it again
-document.getElementById("booksClosingMenu").addEventListener("click", function(event) {
-    var booksSection = document.querySelector(".books_section");
-    if (booksSection.style.display === "none" || booksSection.style.display === "") {
-        booksSection.style.display = "block";
-    } else {
-        booksSection.style.display = "none";
+    booksToggleButton.addEventListener('click', function(event) {
+        const booksSection = document.querySelector(".books_section");
+        toggleSectionVisibility(booksSection, booksToggleButton);
+    });
+
+    // Function to toggle section visibility and change button text
+    function toggleSectionVisibility(section, button) {
+        if (section.style.display === "none" || section.style.display === "") {
+            section.style.display = "block";
+            button.querySelector('span').textContent = 'hide';
+        } else {
+            section.style.display = "none";
+            button.querySelector('span').textContent = 'show';
+        }
     }
 });
-
-// change the smybol when clicked
-    document.addEventListener('DOMContentLoaded', function() {
-    const toggleButton = document.getElementById('booksClosingMenu');
-    const spanElement = toggleButton.querySelector('span');
-
-    toggleButton.addEventListener('click', function() {
-        if (spanElement.textContent === 'hide') {
-            spanElement.textContent = 'show'; // Change to "⇊" when clicked
-        } else {
-            spanElement.textContent = 'hide'; // Change back to "⇈" when clicked again
-        }
-    });
-});
-
-
-
