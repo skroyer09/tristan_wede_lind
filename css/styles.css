@@ -16,7 +16,6 @@ header {
   text-align: center;
   background: var(--hedderBg);
   color: var(--gold);
-  
 }
 
 .twl {
@@ -26,6 +25,15 @@ header {
 .wda {
     font-size: 23px;
     }
+
+.languageToggle {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
 
 nav {
     background: var(--navBg);
