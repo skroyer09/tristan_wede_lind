@@ -397,3 +397,80 @@ footer {
 }
 
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation: portrait) {
+    
+   /* header */
+    header {
+        padding: 20px;
+        display: flex; /* Add flexbox */
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space items evenly */
+        background: var(--hedderBg);
+        color: var(--gold);
+    }
+
+        /* img */
+    header img {
+        margin-right: 20px; /* Add margin for spacing */
+        }
+
+        /* h1 */
+    .twl {
+        font-size: 33px;
+        margin-bottom: 10px; /* Add margin to separate from the paragraph */
+     }
+
+        /* p */
+    .wda {
+        font-size: 23px;
+        margin-bottom: 20px; /* Add margin to separate from the button */
+    }
+
+        /* button */
+    .languageToggle {
+        padding: 10px 20px; /* Adjust padding for button */
+        border-radius: 5px; /* Add border radius */
+        border: none;
+        cursor: pointer;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        color: #000;
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    
+    ul {
+        list-style-type: none;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+
+
+    ul li:not(:last-child) {
+        margin: 10px 0;
+        border-bottom: none; 
+        margin-right: 1rem; 
+    }
+
+    
+    nav a {
+        text-decoration: none;
+        color: var(--textColorWhite);
+        font-size: 20px;
+        transition: color 0.3s ease, font-size 0.3s ease;
+        
+    }
+}
+
